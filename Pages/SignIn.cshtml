@@ -1,0 +1,12 @@
+﻿@page
+@model RetroArcade.Models.SignInModel
+@{
+}
+
+
+<h1>Welcome to sign in page.</h1>
+<form asp-controller="SignIn" asp-action="SignIn" method="post">
+    Enter UserName: <input asp-for="username" />
+    Enter Password: <input asp-for="password" />
+    <input type="submit" value="Submit"/>
+</form>
